@@ -1,24 +1,29 @@
-# junior-projects
+# library test
 
-## Project setup
+Тестовое задание для компании
+
+## Объяснение
+
+Приложение по условию загружает данные с большого json файла. Из-за этого для упрощения задания фильтры на странице применяются только к данным на странице, чтобы не искать в большой базе. ( Можно было бы симулировать датабазу с сервера, но это задача покрупней )
+
+В Vuex идет работа с логикой и обращения страниц, где они подгружаются по выбранной странице
+
+В AboutView мы попадаем из HomeView, передавая туда выбранную библиотеку.
+
+## Установка
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Запуск
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Тесты
 
-### Lints and fixes files
 ```
-npm run lint
+npm run test:unit
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
